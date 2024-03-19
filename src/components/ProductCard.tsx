@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ProductType } from "../types/product";
 
 export default function ProductCard({
-  id,
+  _id,
   image,
   title,
   description,
@@ -33,7 +33,7 @@ export default function ProductCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Link to={`product/${id}`}>
+        <Link to={`product/${_id}`}>
           <Button size="small">View Details</Button>
         </Link>
       </CardActions>
